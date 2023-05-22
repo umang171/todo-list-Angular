@@ -1,3 +1,7 @@
+<div class="container">
+
+<h1 class="text-center">Todo List</h1>
+
 <h3>Add a Todo</h3>
 <app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
 <h3>Your Todos</h3>
@@ -7,3 +11,4 @@
         <app-todo-item [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)" (todoActive)="toggleTodo($event)"></app-todo-item>
     </div>
 </ng-template>
+</div>
